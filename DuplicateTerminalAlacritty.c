@@ -1,12 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <string.h>
-#include <sys/wait.h>
 
-#define FILE1 "temp.txt"
 int main() {
-	// --working-directory <working-directory>
 	pid_t pid;
 	pid = fork();
 	if (pid == 0)	{
